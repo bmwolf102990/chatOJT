@@ -2,7 +2,7 @@ import React from "react"
 
 const Message = ({text}) => {
     return (
-        <div>{text}</div>
+        <div className="chat-text">{text}</div>
     );
 };
 

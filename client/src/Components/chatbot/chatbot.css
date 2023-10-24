@@ -1,0 +1,130 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center; /* Center the chat container vertically */
+  /* height: 100vh; Make the chat container take up the full viewport height */
+  /* width: 50%; Adjust the width as needed */
+  margin:  auto;
+}
+  
+.message {
+  display: flex;
+  margin: 5px;
+  align-items: flex-start; /* Align items at the start of the flex container */
+  position: relative; /* Add relative positioning for custom positioning */
+}
+  .user .message {
+    justify-content: flex-start;
+  }
+  
+  .assistant .message {
+    justify-content: flex-end;
+
+
+  }
+  .avatar.user-avatar {
+    margin-left: 10px; /* Add margin to the left for user's avatar */
+    /* Move user 75px from the left */
+  }
+  
+  .avatar.assistant-avatar-outside {
+    margin-right: 10px; /* Add margin to the right for assistant's avatar outside the chat bubble */
+     /* Move assistant 75px from the right */
+  }
+  .avatar {
+    /* width: 40px; /* Set the avatar width as needed */
+    /* height: 40px; Set the avatar height as needed */ 
+    margin-right: 5px; /* Adjust the margin to separate avatar from bubble */
+    border-radius: 15px;
+}
+  
+  /* .avatar.assistant-avatar {
+    margin-left: 10px; /* Adjust the margin to position the assistant's avatar to the right */
+
+  
+  .user-avatar {
+   
+    color: white;
+    margin-top:5px;
+  }
+  
+  .assistant-avatar-outside {
+ 
+  
+    margin-left: 5px;
+    float:right;
+  }
+  
+  .message-bubble {
+    max-width: 50%; /* Adjust the width as needed */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f0f0f0; /* Add a background color to the bubble */
+    clear:right;
+}
+  
+  .assistant-bubble {
+
+     max-width: 40%; /* Adjust the width as needed */
+     padding: 10px;
+     border-radius: 10px;
+     background-color: #f0f0f0; /* Add a background color to the bubble */
+     clear:right;
+     margin: 5px;
+
+  }
+  
+  .message-bubble {
+    max-width: 50%;
+    margin: 15px;
+  }
+
+  img{
+    border-radius: 10px;
+   
+  }
+/* 
+  #useravatar{
+    float:left;
+    margin-right: 15px;
+  } */
+
+  /* #ckavatar{
+    float:right;
+  } */
+
+  .avatar.assistant-avatar-outside {
+    margin-right: 200px; /* Add margin to the left for assistant's avatar outside the chat bubble */
+    float:right;
+    margin-top: 5px;
+
+}
+
+.input-container {
+  display: flex;
+  justify-content: center; /* Center the input field horizontally */
+  margin-top: 10px; /* Add some spacing between the last chat bubble and the input field */
+}
+
+form {
+  display: flex;
+  align-items: center; /* Center the input field vertically */
+}
+
+input[type="text"] {
+  flex: 1; /* Allow the input field to expand and take available space */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-left: 10px;
+}
+

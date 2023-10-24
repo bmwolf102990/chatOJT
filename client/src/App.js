@@ -1,12 +1,12 @@
 import './App.css';
 import Title from './Components/Title/Title';
-import UserInput from "../src/components/input/UserInput"
+import Chatbot from './Components/chatbot/Chatbot';
 
 function App() {
   return (
     <div className="App ">
       <Title />
-      <UserInput />
+     <Chatbot />
     </div>
   );
 }

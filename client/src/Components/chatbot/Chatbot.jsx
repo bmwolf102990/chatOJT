@@ -129,7 +129,7 @@ const [messages, setMessages] = useState([
           aria-label="Chat Input Form"
         >
           <input type="text" name="input" placeholder="Type your message..." />
-          <button type="submit">Send</button>
+          <button type="submit" className="btn btn-secondary">Send</button>
         </form>
       </div>
     </div>

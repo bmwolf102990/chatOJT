@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center; 
   margin:  auto;
-
+ padding: auto;
 }
   
 .message {

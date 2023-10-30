@@ -1,18 +1,16 @@
 .chat-container {
   display: flex;
   flex-direction: column;
-
-  justify-content: center; /* Center the chat container vertically */
-  /* height: 100vh; Make the chat container take up the full viewport height */
-  /* width: 50%; Adjust the width as needed */
+  justify-content: center; 
   margin:  auto;
+ padding: auto;
 }
   
 .message {
   display: flex;
   margin: 5px;
-  align-items: flex-start; /* Align items at the start of the flex container */
-  position: relative; /* Add relative positioning for custom positioning */
+  align-items: flex-start; 
+  position: relative; 
 }
   .user .message {
     justify-content: flex-start;
@@ -129,5 +127,6 @@ button {
   border-radius: 8px;
   outline: none;
   cursor: pointer;
+
 }
 

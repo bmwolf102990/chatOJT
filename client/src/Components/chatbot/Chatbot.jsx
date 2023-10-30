@@ -3,8 +3,13 @@ import "./chatbot.css"
 import CK from "./CK.png"
 import Joey from "./joey.jpg"
 
-const Chatbot = () => {
+const Chatbot = ({updateUser, setLoginUser}) => {
 
+
+  const logout = () => {
+    localStorage.removeItem('MyUser'); // Remove user data from localStorage
+   setLoginUser(null)// Reset the user state to null
+  };
 const API_KEY = process.env.REACT_APP_OPEN_API_KEY;
 const [isTyping, setIsTyping] = useState(false);
 
@@ -128,10 +133,13 @@ const [messages, setMessages] = useState([
           }}
           aria-label="Chat Input Form"
         >
-          <input type="text" name="input" placeholder="Type your message..." />
+          <input type="text" name="input" placeholder="Type your message..." /
           <button type="submit" className="btn btn-secondary">Send</button>
         </form>
       </div>
+
+      <button type="button" onClick={logout}>Logout</button>
+      
     </div>
   );
 };
